@@ -12,8 +12,9 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+const database = process.env.DB;
 app.use(express.static("public"));
-mongoose.connect(process.env.DB, {
+mongoose.connect(database, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
