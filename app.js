@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-const database = process.env.DB;
+const database = "mongodb+srv://admin-ethan:test123@cluster0.jrr9d.mongodb.net/todolistDB";
 app.use(express.static("public"));
 mongoose.connect(database, {
   useNewUrlParser: true,
