@@ -7,8 +7,11 @@ Made with Node.js, EJS, mongoDB Atlas, and hosted on Heroku.
 Simple project for practicing various skills in full-stack development.
 ## Usage
 npm init
+
 npm install-all
+
 node app.js || nodemon app.js
+
 Hosted on Port 3000
 
 ## License
