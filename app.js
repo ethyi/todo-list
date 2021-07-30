@@ -14,7 +14,8 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 mongoose.connect(process.env.DB, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
 const itemsSchema = new mongoose.Schema({
